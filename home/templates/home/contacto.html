@@ -1,0 +1,361 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud para Rapanui</title>
+
+    <link rel="icon" type="image/png" href="/static/home/img/Icon.png">
+
+    <link href="http://vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/7.8.2/video.min.js"></script>
+
+    <link rel="stylesheet" href="/static/home/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+        #logo {width:350px; height: 110px;}
+        #letra { font-family:TimesNewRoman;font-size:130% ;}
+        #titulo{ font-family: 'Times New Roman', Times, serif;}
+        #header{background-color:rgb(157, 252, 143);   }
+        
+
+
+        #contacto{}
+        #texto{font-size:130%;}
+        #menu{font-size:140% ;}
+        #contactofooter{ margin-bottom: 30px ;}
+
+        @media (max-width: 349px){
+          #logo{width:115px; height: 90px;}
+          #contacto{font-size: 80%; margin-left: -35px;}
+          #menu{margin-left: 150px; font-size:110%;}
+          #contactofooter{margin-left:-85px ; font-size: 80%;}
+
+          #primertitulo{margin-left: -100px;}
+
+        }
+
+        
+
+        @media(min-width: 350px) and (max-width: 360px){
+        #primertitulo{margin-left: -110px;}
+          
+        #menu{margin-left:-80px ; font-size: 70%;}
+          
+        #contacto{font-size: 70%;margin-top: 10px; margin-left: -20px;}
+          
+         #logo{width:150px; height: 100px;}
+          
+          #contactofooter{margin-left:-80px ; font-size: 90%;}
+
+
+      }
+
+      @media (min-width: 361px) and (max-width: 377px) {
+          
+        #primertitulo{margin-left: -100px;}
+          
+          #menu{margin-left: -75px; margin-top:10px ; font-size:110%;}
+          #contacto{font-size: 80%;}
+         
+         #logo{width:170px; height: 110px;}
+          
+          #contactofooter{margin-left:-70px ; font-size: 80%;}
+
+
+        }
+        @media (min-width: 378px) and (max-width: 385px) {
+          
+          #primertitulo{margin-left: -100px;}
+            
+            #menu{margin-left: -75px; font-size:110%; margin-top: 10px;}
+            
+            #contacto{font-size: 80%;}
+            
+           #logo{width:170px; height: 110px;}
+            
+            #contactofooter{margin-left:-70px ;font-size: 80%;}
+  
+  
+          }
+        @media (min-width: 386px) and (max-width: 412px) {
+          
+          #primertitulo{margin-left: -100px;}
+            
+          #menu{margin-left: -107px;margin-top: 10px ;font-size:110%;}
+            
+            #contacto{font-size: 80%;}  
+            
+           #logo{width:170px; height: 110px;}
+            
+            #contactofooter{margin-left:-70px ;font-size: 80%;}
+  
+  
+          }
+
+        @media (min-width: 413px) and (max-width: 469px) {
+          
+          #primertitulo{margin-left: -100px;}
+            
+            #menu{margin-left: -105px;margin-top: 10px ;font-size:110%;}
+            
+           #contacto{font-size: 80%;}  
+            
+           #logo{width:200px; height: 110px;}
+            
+            #contactofooter{margin-left:-50px ;font-size: 80%;}
+  
+  
+          }
+        @media (min-width: 470px) and (max-width: 540px){
+          #primertitulo{margin-left: -120px;}
+          #subuno{margin-left: -80px;}
+          #subdos{margin-left: -150px;}
+          #subtres{margin-left: -110px;}
+          #menu{margin-left: -185px; font-size:110%;}
+          #fotouno{height:350px; width:250px;}
+         #fotodos{height:350px;width: 450px;}
+         #fototres{height:350px;width: 400px;}
+         #contactofooter{margin-left: -90px; }
+          #contactofooter{margin-left: -90px;}
+          #logo{width:220px; height: 110px;}
+       
+        }
+        @media (min-width: 541px) and (max-width: 598px) { 
+          
+          
+          #logo{width:260px; height: 110px;}
+         
+          
+          
+
+          #primertitulo{margin-left: -120px;}
+          #subuno{margin-left: -80px;}
+          #subdos{margin-left: -150px;}
+          #subtres{margin-left: -150px;}
+          #menu{margin-top: 30px; margin-left: -195px; font-size:110%;}
+          #fotouno{height:350px; width:250px;}
+         #fotodos{height:350px;width: 500px;}
+         #fototres{height:350px;width: 400px;}
+         #contactofooter{margin-left: -90px; }
+          
+
+                
+        }
+        @media (min-width: 599px) and (max-width: 699px) { 
+          
+          
+          #logo{width:260px; height: 110px;}
+         
+          
+          
+
+          #primertitulo{margin-left: -120px;}
+          #subuno{margin-left: -80px;}
+          #subdos{margin-left: -150px;}
+          #subtres{margin-left: -150px;}
+          #menu{margin-top: 20px; margin-left: -105px; font-size:110%;}
+          #fotouno{height:350px; width:250px;}
+         #fotodos{height:350px;width: 500px;}
+         #fototres{height:350px;width: 400px;}
+         #contactofooter{margin-left: -90px; }
+          
+
+                
+        }
+        @media (min-width: 700px) and (max-width: 769px) { 
+          #contacto{margin-left: -40px;}
+          
+          
+          #letra{font-size: 110%;}
+          #logo{width:250px; height: 110px;}
+          #primertitulo{margin-left: -130px;}
+          
+          #texto{font-size:150% ;}
+
+          #primertitulo{margin-left: -50px;}
+          #subuno{margin-left: -30px;}
+          #subdos{margin-left: -100px;}
+          #subtres{margin-left: -240px;}
+          #menu{margin-left: -30px; font-size:110%;}
+          #fotouno{height:400px; width:300px;}
+         #fotodos{height:400px;width: 600px;}
+         #fototres{height:400px;width: 500px;}
+
+          
+        }
+        @media (min-width: 770px) and (max-width: 960px) {
+          #contacto{margin-left: -40px;}
+          
+          #letra{font-size: 120%;}
+          #logo{width:280px; height: 110px;}
+          #primertitulo{margin-left: -100px;}
+
+          #contacto{margin-left: -40px;}
+          #letra{font-size: 120%;}
+          #logo{width:260px; height: 110px;}
+          #texto{font-size:120% ;}
+          #menu{margin-left: -40px;}
+          
+        }
+        @media (min-width: 961px) and (max-width: 1040px) { 
+          #contacto{margin-left: -40px;}
+          
+          
+
+        }
+        @media (min-width: 1041) and (max-width: 1200px) { 
+          
+          #contactofooter{margin-bottom: 40px; }
+          
+          
+          
+        }
+
+        
+
+
+    </style>
+
+
+   
+</head>
+
+
+<footer id="header">
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 align-content-lg-start ">
+        {% load static %}	
+          <img id = logo src="/static/home/img/Logo.png" class="rounded " alt="...">
+      </div>
+
+      <div class="col-3">
+      </div>
+      
+      <div id="contactofooter" class="col-5 row align-content-lg-end">
+        <div class="col-3">
+        </div>
+        <div class="col-9 text-white">
+          Contacto: saludpararapanui@gmail.com
+          <a  href="https://www.facebook.com/ovahe.tepano.7"> <img src="/static/home/img/facenew.png" width="60" height="30" alt=""></a>
+          <a style="margin-left: -10px;" href="https://www.instagram.com/saludpararapanui/?hl=es-la"> <img src="/static/home/img/instagram.png" width="35" height="30" alt=""></a>
+          <a style="margin-left: 4px;"  href="https://twitter.com/SaludNui"> <img src="/static/home/img/Twitter.png" width="35" height="30" alt=""></a>
+        </div>
+
+        <div class="col-3">
+        </div>
+
+        <div id="menu" class="col" >
+          <nav id="menu" class=" navbar navbar-expand navbar-light">
+
+            <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul id="menu" class="navbar-nav mr-auto">
+                
+                <a  href=""><img  src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" aria-selected="true" alt="" loading="lazy">
+                </a>
+                <a class="nav-link text-white letra"   href="/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Inicio</h5></a>
+                  <a class="nav-link text-white"  href="/nosotros/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Nuestro Equipo</h5></a>
+                  <a class="nav-link text-white"  href="/campañas/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Campañas</h5></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<body >
+
+  
+
+
+
+
+  <div class="container-fluid ">
+    <br>
+    <div id="primertitulo" class=" row align-middle">
+      <div class="col-4"></div>
+      <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      <div class="align-middle col-7">
+        <h2 class="text-secondary" id="titulo" >Colabora con nosotros</h2>
+      </div>
+    
+    </div>
+    <br>
+    <div class="row">
+      <div  class="col-lg-6">
+        <div id="header" class="card">
+          <div class="card-body">
+            <h4 class="text-info align-middle font-weight-bolder">
+              <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" >
+              Realidad actual en Rapa Nui:
+              </h4>
+            <h5 class="text-dark text-justify">   
+              Hanga Roa cuenta con una población de 8.000 habitantes aprox. y 120.000 turistas anuales, sin consultorio y con un Hospital de baja complejidad que depende del Servicio de Salud Metropolitano Oriente, siendo el único centro de salud a 3750 km a la redonda, sin posibilidad de derivación a otros centros de referencia antes de al menos 24 horas, según la complejidad de cada paciente. 
+            Nuestro Hospital local cuenta con 7 médicos generales: 
+            2 cirujanos, 1 Cirujano Pediátrico,1 Médico internista- cardiólogo 
+            1 Anestesiólogo,1 Traumatólogo,1 Ginecólogo-obstetra y
+            1 Pediatra. Esta realidad implica realizar atención en horario hábil sumado a equipo de salud local en turno de llamado permanente.
+            </h5>
+          </div>
+        </div>
+        <br>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body ">
+            <h4 class="text-info align-middle font-weight-bolder">
+              <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block " alt="" loading="lazy">
+              Contactanos
+              </h4>
+          <h5 class="text-muted text-justify align-m">   
+            En nuestra Rapa nui estamos desconectados del mundo, y es por eso que necesitamos toda la ayuda posible.
+            Para cualquier tipo de ayuda escribenos a </h5><h5 class="text-primary">saludpararapanui@gmail.com</h5> <h5 class="text-muted"> o visita cualquiera de nuestras redes sociales
+              
+              
+          </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+<br>
+<br>
+<footer id="header">
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 align-content-lg-start ">
+        {% load static %}	
+          <img id = logo src="/static/home/img/Logo.png" class="rounded " alt="...">
+      </div>
+
+      <div class="col-3">
+      </div>
+      
+      <div id="contactofooter" class="col-5 row align-content-lg-end">
+        <div class="col-6">
+        </div>
+        <div class="col-6 text-white">
+          Contacto: saludpararapanui@gmail.com
+          <a  href="https://www.facebook.com/ovahe.tepano.7"> <img src="/static/home/img/facenew.png" width="60" height="30" alt=""></a>
+          <a style="margin-left: -10px;" href="https://www.instagram.com/saludpararapanui/?hl=es-la"> <img src="/static/home/img/instagram.png" width="35" height="30" alt=""></a>
+          <a style="margin-left: 4px;"  href="https://twitter.com/SaludNui"> <img src="/static/home/img/Twitter.png" width="35" height="30" alt=""></a>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

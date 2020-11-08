@@ -1,0 +1,646 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud para Rapanui</title>
+
+    <link rel="icon" type="image/png" href="/static/home/img/Icon.png">
+
+    <link href="http://vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/7.8.2/video.min.js"></script>
+
+    <link rel="stylesheet" href="/static/home/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <style media="screen" type="text/css">
+        #logo {width:350px; height: 110px;}
+        
+        #titulo{ font-family: 'Times New Roman', Times, serif;}
+        #header{background-color:rgb(175, 210, 254);}
+        #imagenes{width: 1000px;}
+        #contacto{}
+        #innecesario{}
+        #foto1{height:500px; width:800px;}
+        #foto2{height:500px; width:400px;}
+        #foto3{height:500px; width:600px;}
+        #texto{font-size:130%}
+        #fotos{}
+        #menu{margin-left: -10px;}
+        #segundotitulo{}
+        #tercertitulo{}
+        #video1{width: 450px;}
+        #cards1{width: 380px; height: 250px;}
+        #video2{width: 450px;}
+        #cards2{width: 380px; height: 250px;}
+        #contactofooter{}
+
+        @media (max-width: 349px){
+          #primertitulo{margin-left: -120px;}
+          #segundotitulo{margin-left: -120px;}
+          #tercertitulo{margin-left: -130px;}
+         
+          #logo{width:115px; height: 90px;}
+          #foto1{height:250px; width:300px;}
+          #foto2{height:250px; width:200px;}
+          #cards1{width: 350px ; margin-left: 5px; margin-top: 50px;}
+          #video1{width: 300; height:220px ; margin-left: 5px; }
+          #cards2{width: 380; height:220px ; margin-left: 00px; }
+          #video2{width: 320; height:220px ; margin-left: 5px;}
+          #contacto{font-size: 80%; margin-left: -35px;}
+          #menu{margin-left: 70px; font-size:110%;}
+          
+          
+          #contactofooter{margin-left:-85px ; font-size: 80%;}
+
+        }
+
+        
+
+        @media(min-width: 350px) and (max-width: 361px){
+          #primertitulo{margin-left: -120px;}
+          #segundotitulo{margin-left: -120px;}
+          #tercertitulo{margin-left: -130px;}
+         
+          #logo{width:150px; height: 100px;}
+          #foto1{height:250px; width:350px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 5px; margin-top: 50px;}
+          #video1{width: 320; height:220px ; margin-left: -5px; }
+          #cards2{width: 380; height:220px ; margin-left: 00px; }
+          #video2{width: 320; height:220px ; margin-left: -10px;}
+          #contacto{font-size: 80%; margin-left: -10px;}
+          #menu{margin-top: 10px; font-size: 110%;margin-left: 10px;}
+          
+          
+          #contactofooter{margin-left:-65px ; font-size: 80%;}
+
+
+        }
+        
+
+
+        @media (min-width: 362px) and (max-width: 379px) {
+          
+          #primertitulo{margin-left: -120px;}
+          #segundotitulo{margin-left: -120px;}
+          #tercertitulo{margin-left: -130px;}
+         
+          #logo{width:170px; height: 110px;}
+          #foto1{height:250px; width:350px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 5px; margin-top: 50px;}
+          #video1{width: 320; height:220px ; margin-left: -5px; }
+          #cards2{width: 380; height:220px ; margin-left: 00px; }
+          #video2{width: 380; height:220px ; margin-left: 2px;}
+          #contacto{font-size: 80%;}
+          #menu{margin-left:-30px ;margin-top: 10px; font-size: 110%;}
+          
+          
+          #contactofooter{margin-left:-60px ; font-size: 80%;}
+
+
+        }
+        @media (min-width: 380px) and (max-width: 412px) {
+          
+          #primertitulo{margin-left: -120px;}
+          #segundotitulo{margin-left: -120px;}
+          #tercertitulo{margin-left: -130px;}
+         
+          #logo{width:170px; height: 110px;}
+          #foto1{height:250px; width:350px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 30px; margin-top: 50px;}
+          #video1{width: 320; height:220px ; margin-left: 5px; }
+          #cards2{width: 380; height:220px ; margin-left: 15px; }
+          #video2{width: 380; height:220px ; margin-left: 15px;}
+          #contacto{font-size: 80%;}
+          #menu{margin-left:-69px ;margin-top: 10px; font-size: 110%;}
+          
+          
+          #contactofooter{margin-left:-60px ; font-size: 80%;}
+
+
+        }
+        @media (min-width: 413px) and (max-width: 469px) {
+          
+          #primertitulo{margin-left: -120px;}
+          #segundotitulo{margin-left: -120px;}
+          #tercertitulo{margin-left: -130px;}
+         
+          #logo{width:170px; height: 110px;}
+          #foto1{height:250px; width:350px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 40px; margin-top: 50px;}
+          #video1{width: 320; height:220px ; margin-left: 10px; }
+          #cards2{width: 380; height:220px ; margin-left: 20px; }
+          #video2{width: 380; height:220px ; margin-left: 22px;}
+          #contacto{font-size: 80%;}
+          #menu{margin-left:-30px ;margin-top: 10px; font-size: 115%;}
+          
+          
+          #contactofooter{margin-left:-60px ; font-size: 80%;}
+
+
+        }
+        @media (min-width: 470px) and (max-width: 540px){
+          #primertitulo{margin-left: -140px;}
+          #segundotitulo{margin-left: -100px;}
+          #tercertitulo{margin-left: -110px;}
+          #logo{width:200px; height: 110px;}
+          #foto1{height:250px; width:400px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 50px; margin-top: 50px;}
+          #video1{width: 380; height:220px ; margin-left: 0px;}
+          #cards2{width: 380; height:220px ; margin-left: 20px; }
+          #video2{width: 380; height:220px ; margin-left: 60px;}
+          #contacto{font-size: 100%;}
+          #menu{margin-left:-230px ;margin-top: 30px;}
+          
+          #contactofooter{margin-left: -90px;}
+       
+        }
+        @media (min-width: 541px) and (max-width: 598px) { 
+          
+          #primertitulo{margin-left: -170px;}
+          #segundotitulo{margin-left: -140px;}
+          #tercertitulo{margin-left: -100px;}
+          #logo{width:260px; height: 110px;}
+          #foto1{height:250px; width:500px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 100px; margin-top: 50px;}
+          #video1{width: 380; height:220px ; margin-left: 20px;}
+          #cards2{width: 380; height:220px ; margin-left: 40px; }
+          #video2{width: 380; height:220px ; margin-left: 90px;}
+          #contacto{font-size: 100%;}
+          #menu{margin-left:-230px ;margin-top: 30px;}
+          
+          #menulogo{ }
+          #segundotitulo{margin-left: -90px;}
+          #contactofooter{margin-left:-80px ;}
+
+                
+        }
+        @media (min-width: 599px) and (max-width: 699px) { 
+          
+          #primertitulo{margin-left: -170px;}
+          #segundotitulo{margin-left: -140px;}
+          #tercertitulo{margin-left: -100px;}
+          #logo{width:260px; height: 110px;}
+          #foto1{height:250px; width:500px;}
+          #foto2{height:250px; width:230px;}
+          #cards1{width: 350px ; margin-left: 100px; margin-top: 50px;}
+          #video1{width: 380; height:220px ; margin-left: 20px;}
+          #cards2{width: 380; height:220px ; margin-left: 40px; }
+          #video2{width: 380; height:220px ; margin-left: 90px;}
+          #contacto{font-size: 100%;}
+          #menu{margin-left:-80px ;margin-top: 20px; font-size: 110%;}
+          
+          #menulogo{ }
+          #segundotitulo{margin-left: -90px;}
+          #contactofooter{margin-left:-80px ;}
+
+                
+        }
+        @media (min-width: 700px) and (max-width: 724px) { 
+        #contacto{margin-left: -40px;}
+          
+          #cards1{width: 270px ; margin-left: -30px;}
+          #video1{width: 360; height:200px ; margin-left: -30px;}
+          #cards2{width: 270px ; margin-left: -30px;}
+          #video2{width: 360; height:200px ; margin-left: -30px;}
+          #letra{font-size: 120%;}
+          #logo{width:270px; height: 110px;}
+          #primertitulo{margin-left: -130px;}
+          #foto1{height:380px; width:600px;}
+          #foto2{height:380px; width:300px;}
+          #texto{font-size:120% ;}
+          #fotos{margin-left: -20px;}
+          #segundotitulo{margin-left: -80px;}
+          #tercertitulo{margin-left: -80px;}
+        }
+        @media (min-width: 725px) and (max-width: 832px) {
+          #contacto{margin-left: -40px;}
+          #cards1{width: 260px ; margin-left: -30px;}
+          #video1{width: 360; height:200px ; margin-left: -10px;}
+          #cards2{width: 240px ; margin-left: 0px;}
+          #video2{width: 350; height:200px ; margin-left: 0px;}
+          #letra{font-size: 120%;}
+          #logo{width:260px; height: 110px;}
+          #primertitulo{margin-left: -130px;}
+          #segundotitulo{margin-left: -70px;}
+          #tercertitulo{margin-left: -60px;}
+          #foto1{height:400px; width:600px;}
+          #foto2{height:400px; width:300px;}
+          #texto{font-size:120% ;}
+          #menu{font-size: 110%; margin-left: -30px;}
+        }
+        @media (min-width: 833px) and (max-width: 960px) {
+          #contacto{margin-left: -40px;}
+          #cards1{width: 270px ; margin-left: -30px;}
+          #video1{width: 360; height:200px ; margin-left: -10px;}
+          #cards2{width: 240px ; margin-left: 0px;}
+          #video2{width: 350; height:200px ; margin-left: 0px;}
+          #letra{font-size: 120%;}
+          #logo{width:280px; height: 110px;}
+          #primertitulo{margin-left: -130px;}
+          #segundotitulo{margin-left: -70px;}
+          #tercertitulo{margin-left: -60px;}
+          #foto1{height:400px; width:600px;}
+          #foto2{height:400px; width:300px;}
+          #texto{font-size:120% ;}
+          #menu{font-size: 110%; margin-left: -30px; }
+        }
+
+
+
+
+        @media (min-width: 961px) and (max-width: 1040px) { 
+           
+           #cards1{width: 300px ;}
+           #video1{width: 400px; height:200px ;}
+           #cards2{width: 320px ; margin-left:50px ;}
+           #video2{width: 400px; height:200px ; margin-left: 20px;}
+           #menu{font-size: 110%;}
+          
+
+        }
+        @media (min-width: 1041) and (max-width: 1200px) { 
+          
+          #videocorona{margin-left: -50px;}
+          #tercertitulo{margin-left: -100px;}
+          #segundotitulo{margin-left: -80px;}
+          #primertitulo{margin-left: -100px;}
+          #contactofooter{margin-bottom: 40px; margin-right:-200px;}
+          #video1{margin-left: 100px;}
+          #cards1{margin-top: 100px;}
+        }
+    </style>
+</head>
+
+<footer id="header">
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 align-content-lg-start ">
+        {% load static %}	
+          <img id = logo src="/static/home/img/Logo.png" class="rounded " alt="...">
+      </div>
+
+      <div class="col-3">
+      </div>
+      
+      <div id="contactofooter" class="col-5 row align-content-lg-end">
+        <div class="col-3">
+        </div>
+        <div class="col-9 text-white">
+          Contacto: saludpararapanui@gmail.com
+          <a  href="https://www.facebook.com/ovahe.tepano.7"> <img src="/static/home/img/facenew.png" width="60" height="30" alt=""></a>
+          <a style="margin-left: -10px;" href="https://www.instagram.com/saludpararapanui/?hl=es-la"> <img src="/static/home/img/instagram.png" width="35" height="30" alt=""></a>
+          <a style="margin-left: 4px;"  href="https://twitter.com/SaludNui"> <img src="/static/home/img/Twitter.png" width="35" height="30" alt=""></a>
+        </div>
+
+        <div class="col-3">
+        </div>
+
+        <div id="menu" class="col" >
+          <nav id="menu" class=" navbar navbar-expand navbar-light">
+
+            <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul id="menu" class="navbar-nav mr-auto">
+                
+                <a  href=""><img  src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" aria-selected="true" alt="" loading="lazy">
+                </a>
+                <a class="nav-link text-white letra" href="/nosotros/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Nuestro Equipo</h5></a>
+                <a class="nav-link text-white "  href="/campañas/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Campañas</h5></a>
+                <a class="nav-link text-white"  href="/contacto/" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h5>Contacto</h5></a> 
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<body >
+  <div class="container ">
+    <br>
+    <div id="primertitulo" class=" row align-middle">
+      <div class="col-4"></div>
+      <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      <div class="align-middle col-7">
+        <h2 class="text-secondary" id="titulo" >Nuestra querida Rapa nui</h2>
+      </div>
+    </div>
+    <br>
+    <div id="fotos" class="row ">
+      <div  class=" rounded mx-auto  rounded" >
+          <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+              <div class="carousel-inner rounded  ">
+                <div class="carousel-item active  ">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto1.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Reconocimiento</h5>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto2" src="/static/home/img/Paisajes/foto2.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Reconocimiento</h5>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto3.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Reconocimiento</h6>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto4.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Reconocimiento</h6>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto5.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Reconocimiento</h6>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto6.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Reconocimiento</h6>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/foto7.jpeg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Reconocimiento</h6>
+                    <p>Secretaria técnica de patrimonio, 2020</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto2" src="/static/home/img/Paisajes/Foto8.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    
+                    <h6>Hermosa fotografía perteneciente a yvan.neault.photography</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/Foto9.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Los moai del Ahu Nau Nau de Anakena</h6>
+                    <h6>Guardianes de Rapa Nui</h6>
+                    <h6>Fotografía que pertenece a Miguel V</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto3" src="/static/home/img/Paisajes/Foto10.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Tortuga en el mar de Rapa Nui</h6>
+                    <h6>Hermosa fotografía perteneciente a bruno.peralta1</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/Foto11.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Sorprende Rapa Nui</h6>
+                    <h6>Magnifica fotografía ampliada que pertenece a Humberto Rojas, subida el 29.MAR.2016</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/Foto12.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Amanecer en Ahu Tongariki</h6>
+                    <h6>Fotografía que pertenece a Diego Vargas, tomada el 21.FEB.2010</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto2" src="/static/home/img/Paisajes/Foto13.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Belleza Rapa Nui</h6>
+                    <h6>Fotografía a través de Pablo Gómez Niada</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto2" src="/static/home/img/Paisajes/Foto14.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Fotografía que pertenece a Fabrice Perrey</h6>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/Foto15.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    
+                    <h6>Fotografía a través @salva_salgado</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto1" src="/static/home/img/Paisajes/Foto16.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>AHU NAU NAU en Anakena Beach.</h6>
+                    <h6>Fotografía que pertenece a Dagmar Schulze, tomada el 25.ENE.2014</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto3" src="/static/home/img/Paisajes/Foto17.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Imagen recienteme subida a Instagram por chiletravel</h6>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto3" src="/static/home/img/Paisajes/Foto18.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Fotografía obtenida a través de picdeer.com</h6>
+                    <h6>Subida por maururutravel.</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto2" src="/static/home/img/Paisajes/Foto19.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Imagen obtenida a través de Instagram.</h6>
+                    <h6>Subida recientemente por pepohaecker.</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  {% load static %}	
+                  <img id="foto3" src="/static/home/img/Paisajes/Foto20.jpg"  class="d-block rounded mx-auto" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>Fotografía obtenida a través de Instagram.</h6>
+                    <h6>Subida recientemente por visitchilecl</h6>
+                  </div>
+                </div>
+
+                
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span></a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container-fluid" id="header">
+    <br>
+    
+    <div  id="segundotitulo" class=" row align-middle rounded">
+      <div class="col-5"></div>
+      <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+
+      <div class="align-middle col-5">
+        
+        <h2 class="text-white" id="titulo" >Nosotros</h2>
+      </div>
+      <br>
+
+    </div>
+    <br>
+    <div class="row">
+      <div id="innecesario" class="col-1"></div>
+
+      <div id="video1" class=" rounded " >
+        <div id="video1" class="embed-responsive embed-responsive-16by9 rounded">
+          <iframe width="1343" height="480" src="https://www.youtube.com/embed/J8ufSsG7mAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+      </div>
+      <div id="videocorona innecesario" class="col-1"></div>
+      
+
+      <div id="cards1" >
+        <div id="texto" class="card-header ">
+          <h3 id="texto" class="text-white align-middle font-weight-bolder">
+            <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Nuestra misión  
+          </h3>
+        </div>
+        <div id="cards1 texto" class="card-body">
+          <h4 id="texto" class="text-dark text-justify">   
+            En Fundación Salud para Rapa Nui, nos mueve el desafío de promover y proteger la salud, física y mental, en habitantes de Rapa Nui.
+        </h4></div>
+      </div>
+      <br>
+
+    </div>
+    <br>
+    <div>
+
+    </div>
+    <div>
+      
+    </div>
+   
+    <br>
+
+  </div>
+
+  <div class="container-fluid">
+    <br>
+
+    <div id="tercertitulo" class=" row align-middle">
+      <div class="col-5"></div>
+      <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+
+      <div class="align-middle col-5">
+        
+        <h2 class="text-secondary" id="titulo" >Protegeté</h2>
+      </div>
+      
+
+    </div>
+    <br>
+    <div class="row">
+      
+      <div class="col-1"></div>
+      
+
+      <div id="cards2"  >
+        <div id="texto" class="card-header ">
+          <h3 id="texto" class="text-info align-middle font-weight-bolder">
+          <img src="/static/home/img/Flor.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Cuidate del coronavirus
+          </h3></div>
+        <div class="card-body">
+          <h4 id="texto" class="text-muted text-justify ">   
+            Aquí te damos unos pequeños consejos para que te protejas del coronavirus
+          </h4></div>
+      </div>
+
+      <div id="videocorona innecesario" class="col-1"></div>
+
+      <div id="video2"  class="card text-dark " >
+        <div id="" class="embed-responsive embed-responsive-16by9 rounded-lg">
+          <iframe width="1343" height="480" src="https://www.youtube.com/embed/BHWf_xSO5Sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+
+    
+</body>
+<br>
+<footer id="header">
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 align-content-lg-start ">
+        {% load static %}	
+          <img id = logo src="/static/home/img/Logo.png" class="rounded " alt="...">
+      </div>
+
+      <div class="col-3">
+      </div>
+      
+      <div id="contactofooter" class="col-5 row align-content-lg-end">
+        <div class="col-6">
+        </div>
+        <div class="col-6 text-white">
+          Contacto: saludpararapanui@gmail.com
+          <a  href="https://www.facebook.com/ovahe.tepano.7"> <img src="/static/home/img/facenew.png" width="60" height="30" alt=""></a>
+          <a style="margin-left: -10px;" href="https://www.instagram.com/saludpararapanui/?hl=es-la"> <img src="/static/home/img/instagram.png" width="35" height="30" alt=""></a>
+          <a style="margin-left: 4px;"  href="https://twitter.com/SaludNui"> <img src="/static/home/img/Twitter.png" width="35" height="30" alt=""></a>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
